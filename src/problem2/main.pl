@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 
+use lib 'lib';
+
 my $list = My::List->new;
 
 $list->append("Hello");
@@ -11,4 +13,3 @@ my $iter = $list->iterator;
 while ($iter->has_next) {
     print $iter->next->value;
 }
-

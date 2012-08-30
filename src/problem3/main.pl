@@ -1,7 +1,9 @@
 use strict;
 use warnings;
 
+use lib 'lib';
 use Bird;
+
 my $b1 = Bird->new( name =>  'rejasupotaro');
 my $b2 = Bird->new( name =>  'yuya_presto');
 my $b3 = Bird->new( name =>  'ukayare');
