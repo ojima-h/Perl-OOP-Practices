@@ -1,5 +1,12 @@
 # Perlでオブジェクト指向を勉強するための課題
 
+Perlを使ってオブジェクト指向開発をしてみましょう。
+
+## 問題を解くための手順
+
+1. githubのこのプロジェクトをforkする
+![fork me](http://gyazo.com/be9d97c5364f4debd58c8a30fdf8b5ab.png?1347282042)
+
 ## 問題一覧
 
 ### 問題1 : [アルゴリズムを変更可能なSorterクラス](https://github.com/ainame/Perl-OOP-Practices/blob/master/oop-for-perl.md#問題1)
