@@ -4,8 +4,13 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 
 ## 問題を解くための手順
 
-1. githubのこのプロジェクトをforkする
-![fork me](http://gyazo.com/be9d97c5364f4debd58c8a30fdf8b5ab.png?1347282042)
+1. githubのこのプロジェクトをforkする  
+
+![fork me](http://gyazo.com/aca6f59e81fe8086006b67af1f80055f.png?1347283698)
+
+2. ローカルにgit cloneする！
+
+![git clone](http://gyazo.com/7bcb121a773a6b29a99b81d1e596cfc3.png?1347284185)
 
 ## 問題一覧
 
