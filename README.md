@@ -4,9 +4,12 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 
 ## 問題を解くための手順
 0. （まだ持っていなかったら）githubのアカウントを作成する！
-1. githubのこのプロジェクトをforkする  
+  * [こちら](http://d.hatena.ne.jp/shim0mura/20111212/1323660740)を参考にアカウントを設定をしてみて下さい
+  * SSHの公開鍵設定はコードをgithub上に公開するために必要です
+1. githubのこのプロジェクトをforkする
+  * 以下のスクリーンショットにあるようなForkボタンを押せばフォーク終了です
 ![fork me](http://gyazo.com/aca6f59e81fe8086006b67af1f80055f.png?1347283698)
-2. ローカルにgit cloneする！  
+2. ローカルにgit cloneする！ 
 ![git clone](http://gyazo.com/7bcb121a773a6b29a99b81d1e596cfc3.png?1347284185)
 3. 問題を解く！
 4. $ perl main.pl を実行してみる！
