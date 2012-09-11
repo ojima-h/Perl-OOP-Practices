@@ -34,7 +34,7 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
     |-- problem1     # 問題1のディレクトリ
     |   |-- lib      # 問題1のライブラリのpmファイルを書いて保存する場所
     |   `-- main.pl  # ライブラリをuseして実行するためのファイル
-    |-- problem2
+    |-- problem2     # 以下同様
     |   |-- lib
     |   `-- main.pl
     `-- problem3
@@ -49,6 +49,8 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 ### Git
 * [イラストでわかる！git入門の入門 : アシアルブログ](http://blog.asial.co.jp/894)
 * [デザイナのためのGit](https://github.com/hatena/Git-for-Designers)
+* [try Git](http://try.github.com/): Web上でGitを体験できるサイトです
+
 
 ## 引用元
 この問題集は、[はてなの教科書](https://github.com/hatena/Hatena-Textbook) から引用させていただいています。
