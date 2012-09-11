@@ -10,7 +10,7 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 ![git clone](http://gyazo.com/7bcb121a773a6b29a99b81d1e596cfc3.png?1347284185)
 3. 問題を解いてgit commitする！
 4. git pushする！
-
+![git push](http://gyazo.com/eec8ba6e0543c482f5e12909d5f6c637.png)
 
 ## 問題一覧
 
