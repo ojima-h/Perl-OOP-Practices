@@ -1,7 +1,9 @@
 use strict;
 use warnings;
 
-use lib 'lib';
+# ライブラリのロードパスを設定
+use File::Basename;
+use lib dirname(__FILE__).'/lib';
 use Bird;
 
 my $b1 = Bird->new( name =>  'rejasupotaro');
