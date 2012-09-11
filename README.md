@@ -8,8 +8,10 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 ![fork me](http://gyazo.com/aca6f59e81fe8086006b67af1f80055f.png?1347283698)
 2. ローカルにgit cloneする！  
 ![git clone](http://gyazo.com/7bcb121a773a6b29a99b81d1e596cfc3.png?1347284185)
-3. 問題を解いてgit commitする！
-4. git pushする！
+3. 問題を解く！
+4. $ perl main.pl を実行してみる！
+5. 問題を解いたらgit commitする！
+6. git pushする！
 ![git push](http://gyazo.com/eec8ba6e0543c482f5e12909d5f6c637.png)
 
 ## 問題一覧
@@ -19,9 +21,11 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 ### 問題3 : [OOPでTwitterのようなモデル](https://github.com/ainame/Perl-OOP-Practices/blob/master/oop-for-perl.md#問題3オプション)
 
 ## 問題に取り組む際の注意点
-
+* cdコマンドでsrcディレクトリ以下の書く問題のディレクトリに移動してから作業をして下さい
+  * perl main.pl と実行する際に、lib/ディレクトリ以下に書いたクラスが読み込まれます
+* ファイルを編集をしたらgitを活用して少しづつcommitしていきましょう
 * 余裕があったら機能追加してみましょう
-* ディレクトリ構成は以下のようになっています。
+* ディレクトリ構成は以下のようになっています
 
 ``` text
 |-- README.md
@@ -39,9 +43,11 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 ```
 
 ## 参考資料
+### Perl
+* [perldoc.jp](http://perldoc.jp/)
 
 ### Git
-
+* [イラストでわかる！git入門の入門 : アシアルブログ](http://blog.asial.co.jp/894)
 * [デザイナのためのGit](https://github.com/hatena/Git-for-Designers)
 
 ## 引用元
