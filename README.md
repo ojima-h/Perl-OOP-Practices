@@ -3,18 +3,22 @@
 Perlを使ってオブジェクト指向開発をしてみましょう。
 
 ## 問題を解くための手順
-0. （まだ持っていなかったら）githubのアカウントを作成する！
+0. （まだ持っていなかったら）githubのアカウントを作成！
   * [こちら](http://d.hatena.ne.jp/shim0mura/20111212/1323660740)を参考にアカウントを設定をしてみて下さい
-  * SSHの公開鍵設定はコードをgithub上に公開するために必要です
-1. githubのこのプロジェクトをforkする
-  * 以下のスクリーンショットにあるようなForkボタンを押せばフォーク終了です
+  * SSHの公開鍵設定はコードをgithub上に公開するために必要
+1. githubのこのプロジェクトをfork
+  * githubにおけるforkとは、他の人のリポジトリを自分の物としていじりたい時に分岐させる処理のこと  
+  * 以下のスクリーンショットにあるようなForkボタンを押せばフォーク終了  
 ![fork me](http://gyazo.com/aca6f59e81fe8086006b67af1f80055f.png?1347283698)
-2. ローカルにgit cloneする！ 
+2. ローカルにgit cloneする！
+forkした後に表示される部分のアドレスを元にgit cloneコマンドを使ってダウンロード
+![url](http://gyazo.com/7affd9418e34350d74d2057383109cef.png?1347368819)
 ![git clone](http://gyazo.com/7bcb121a773a6b29a99b81d1e596cfc3.png?1347284185)
 3. 問題を解く！
-4. $ perl main.pl を実行してみる！
-5. 問題を解いたらgit commitする！
-6. git pushする！
+  * お好きなエディタで編集
+  * コードが書けたらmain.pl を実行！(普通にperlコマンドを使って下さい)
+4. 問題を解いたらgit commit
+5. git push！
 ![git push](http://gyazo.com/eec8ba6e0543c482f5e12909d5f6c637.png)
 
 ## 問題一覧
@@ -50,6 +54,7 @@ Perlを使ってオブジェクト指向開発をしてみましょう。
 * [perldoc.jp](http://perldoc.jp/)
 
 ### Git
+* [github で fork と pull request に挑戦。](http://kuroigamen.com/15)
 * [イラストでわかる！git入門の入門 : アシアルブログ](http://blog.asial.co.jp/894)
 * [デザイナのためのGit](https://github.com/hatena/Git-for-Designers)
 * [try Git](http://try.github.com/): Web上でGitを体験できるサイトです
