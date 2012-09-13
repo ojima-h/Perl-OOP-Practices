@@ -60,25 +60,25 @@ twitterもどきをつくろう。
 
 ``` perl
 use Bird;
-my $b1 = Bird->new( name => 'jkondo');
-my $b2 = Bird->new( name => 'reikon');
-my $b3 = Bird->new( name => 'onishi');
+my $b1 = Bird->new( name =>  'rejasupotaro');
+my $b2 = Bird->new( name =>  'yuya_presto');
+my $b3 = Bird->new( name =>  'ukayare');
 
 $b1->follow($b2);
 $b1->follow($b3);
 
 $b3->follow($b1);
 
-$b1->tweet('きょうはあついですね！');
-$b2->tweet('しなもんのお散歩中です');
-$b3->tweet('烏丸御池なう！');
+$b1->tweet('あなたもLispをはじめてみませんか？');
+$b2->tweet('9時58分か・・・いつも（の出社時間）より早い・・・');
+$b3->tweet('彼女の為に働くための彼女がいない');
 
 my $b1_timelines = $b1->friends_timeline;
-print $b1_timelines->[0]->message; # onishi: 烏丸御池なう!
-print $b1_timelines->[1]->message; # reikon: しなもんのお散歩中です
+print $b1_timelines->[0]->message; # ukayare: 彼女の為に働くための彼女がいない
+print $b1_timelines->[1]->message; # yuya_presto: 9時58分・・・いつも（の出社時間）より早い・・・
 
 my $b3_timelines = $b3->friends_timeline;
-print $b3_timelines->[0]->message; # jkondo: 今日はあついですね！
+print $b3_timelines->[0]->message; # rejasupotaro: あなたもLispをはじめてみませんか？
 ```
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.1/jp/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.1/jp/">クリエイティブ・コモンズ 表示 - 非営利 - 継承 2.1 日本 ライセンスの下に提供されています。</a>
