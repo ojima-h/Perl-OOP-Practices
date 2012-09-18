@@ -17,6 +17,8 @@ forkした後に表示される部分のアドレスを元にgit cloneコマン�
 3. 問題を解く！
   * お好きなエディタで編集
   * コードが書けたらmain.pl を実行！(普通にperlコマンドを使って下さい)
+    * srcディレクトリ以下にソースコードのひな形があります
+    * 雛形を元にmain.plが正常に動作するようにコードを書いてみて下さい
 4. 問題を解いたらgit commit
 5. git push！
 ![git push](http://gyazo.com/eec8ba6e0543c482f5e12909d5f6c637.png)
