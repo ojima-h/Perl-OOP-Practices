@@ -13,12 +13,15 @@ BEGIN { use_ok 'Sorter' }
 # Sorter
 #
 new_ok('Sorter');
-my $sorter = Sorter->new;
 
-can_ok($sorter, $_) for qw/set_values sort get_values/;
-$sorter->set_values(5, 4, 1, 3, 2);
-$sorter->sort;
+for my $mode (qw( QuickSorter QuickSorterNoSwap )) {
+  my $sorter = Sorter->new($mode);
 
-cmp_deeply($sorter->get_values, [1, 2, 3, 4, 5]);
+  can_ok($sorter, qw(set_values sort get_values));
+  $sorter->set_values(5, 4, 1, 3, 2);
+  $sorter->sort;
+
+  cmp_deeply($sorter->get_values, [1, 2, 3, 4, 5], "Sorting by $mode");
+}
 
 done_testing;
