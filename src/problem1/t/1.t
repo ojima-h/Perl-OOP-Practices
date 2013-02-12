@@ -14,7 +14,7 @@ BEGIN { use_ok 'Sorter' }
 #
 new_ok('Sorter');
 
-for my $mode (qw( QuickSorter QuickSorterNoSwap HeapSorter )) {
+for my $mode (qw( QuickSorter QuickSorterNoSwap HeapSorter PacketSorter )) {
   my $sorter = Sorter->new($mode);
 
   can_ok($sorter, qw(set_values sort get_values));

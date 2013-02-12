@@ -5,11 +5,13 @@ use warnings;
 require Sorter::QuickSorter;
 require Sorter::QuickSorterNoSwap;
 require Sorter::HeapSorter;
+require Sorter::PacketSorter;
 
 my %sort_funcs = (
   QuickSorter       => \&Sorter::QuickSorter::sort,
   QuickSorterNoSwap => \&Sorter::QuickSorterNoSwap::sort,
   HeapSorter        => \&Sorter::HeapSorter::sort,
+  PacketSorter        => \&Sorter::PacketSorter::sort,
 );
 
 sub new {
