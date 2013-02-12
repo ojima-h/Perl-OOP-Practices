@@ -37,7 +37,6 @@ sub _sort {
         }
       }
 
-    $DB::single = 1;
       $s1 = $from + @lt;
       $s2 = $s1 + @eq;
       @{ $array }[$from .. $s1 - 1] = @lt if @lt;

@@ -4,10 +4,12 @@ use warnings;
 
 require Sorter::QuickSorter;
 require Sorter::QuickSorterNoSwap;
+require Sorter::HeapSorter;
 
 my %sort_funcs = (
   QuickSorter       => \&Sorter::QuickSorter::sort,
   QuickSorterNoSwap => \&Sorter::QuickSorterNoSwap::sort,
+  HeapSorter        => \&Sorter::HeapSorter::sort,
 );
 
 sub new {
