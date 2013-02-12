@@ -6,12 +6,14 @@ require Sorter::QuickSorter;
 require Sorter::QuickSorterNoSwap;
 require Sorter::HeapSorter;
 require Sorter::PacketSorter;
+require Sorter::MergeSorter;
 
 my %sort_funcs = (
   QuickSorter       => \&Sorter::QuickSorter::sort,
   QuickSorterNoSwap => \&Sorter::QuickSorterNoSwap::sort,
   HeapSorter        => \&Sorter::HeapSorter::sort,
-  PacketSorter        => \&Sorter::PacketSorter::sort,
+  PacketSorter      => \&Sorter::PacketSorter::sort,
+  MergeSorter       => \&Sorter::MergeSorter::sort,
 );
 
 sub new {
