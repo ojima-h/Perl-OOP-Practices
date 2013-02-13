@@ -25,7 +25,14 @@ sub detach {
 sub notify {
   my ($self, @args) = (shift, @_);
   for my $observer (values %{ $OBSERVERS{$self} }) {
-    $observer->update($self, @args);
+    $observer->update($self, @args) if $observer->can('update');
+  }
+
+  # notify to class
+  if (my $class = ref $self) {
+    for my $observer (values %{ $OBSERVERS{$class} }) {
+      $observer->update($self, @args) if $observer->can('update');
+    }
   }
 }
 

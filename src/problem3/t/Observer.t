@@ -14,11 +14,12 @@ BEGIN {
   use_ok 'Subject';
 }
 
-our @messages;
 
 {
   package ConcreteObserver;
   use base 'Observer';
+
+  our @messages;
 
   sub new {
     my ($class, $name) = @_;
@@ -27,7 +28,11 @@ our @messages;
 
   sub update {
     my ($self, $subject, $message) = @_;
-    push our @messages, $self->{name} . ": $message";
+    my $debug_message = sprintf("observer:%s, subject:%s, message:$message",
+                                ref($self) ? $self->{name} : $self,
+                                ref($subject) ? $subject->{name} : $subject);
+
+    push(our @messages, $debug_message);
   }
 }
 
@@ -47,6 +52,7 @@ our @messages;
 
 my $observerA = ConcreteObserver->new("observerA");
 my $observerB = ConcreteObserver->new("observerB");
+my $observerC = ConcreteObserver->new("observerC");
 
 my $subject = ConcreteSubject->new("subjectA");
 
@@ -54,8 +60,14 @@ can_ok($subject, 'attach');
 
 $subject->attach($observerA);
 $subject->attach($observerB);
+ConcreteSubject->attach($observerC);
 
 $subject->notify_test;
+cmp_ok(@ConcreteObserver::messages, '==', 3);
+ok(/^observer:observerA, subject:subjectA/ ~~ @ConcreteObserver::messages);
+ok(/^observer:observerB, subject:subjectA/ ~~ @ConcreteObserver::messages);
+ok(/^observer:observerC, subject:subjectA/ ~~ @ConcreteObserver::messages);
 
-ok(grep("observerA: Test Massage", @ConcreteObserver::messages));
-ok(grep("observerB: Test Massage", @ConcreteObserver::messages));
+ConcreteSubject->notify_test;
+cmp_ok(@ConcreteObserver::messages, '==', 4);
+ok(/^observer:observerC, subject:ConcreteSubject/ ~~ @ConcreteObserver::messages);
